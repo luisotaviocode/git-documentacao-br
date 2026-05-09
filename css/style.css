@@ -1,6 +1,6 @@
 /* Paleta de Cores */
 :root{
-    --primary-color: #F05133;
+    --primary-color: #F14E32;
     --secondary-color: #FFFFFF;
     --tertiary-color: #000000;
 }
@@ -10,4 +10,87 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
+    font-family: 'Satoshi-Regular';
+}
+
+/* Menu */
+nav{
+    background-color: #EFEFE7;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Git Logo */
+#nav-git-icon{
+    height: 40px;
+    width: auto;
+    margin: 5px 0 0 15px;
+}
+
+/* Menu dos Links para as páginas */
+.nav-links{
+    position: relative;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-family: Satoshi-Medium;
+    font-size: 1.15rem;
+    padding: 5px;
+
+    transition: all 0.15s ease-in;
+}
+
+.nav-links::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #F14E32;
+    transition: width 0.2s ease-out;
+}
+
+.nav-links:hover{
+    font-size: 1.2rem;
+}
+
+.nav-links:hover::after{
+    width: 100%;
+}
+
+/* Botão para a página da instalação */
+.btn-install{
+    margin: 0 10px 0 0;
+    height: 40px;
+    width: 160px;
+    border: none;
+    border-radius: 16px;
+    background-color: #F14E32;
+    color: #EFEFE7;
+    cursor: pointer;
+
+    text-align: center;
+    transition: all 0.5s ease;
+
+    font-family: 'Satoshi-Black';
+    font-size: 1.05rem;
+}
+
+.btn-install:hover{
+    border-radius: 10px;
+}
+
+/* Botão que muda a cor do tema (dark/light) */
+.btn-change-theme{
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    color: #000000;
 }
