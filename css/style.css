@@ -68,10 +68,10 @@ nav{
 /* Botão para a página da instalação */
 .btn-install{
     margin: 0 10px 0 0;
-    height: 40px;
-    width: 160px;
+    height: 35px;
+    width: 165px;
     border: none;
-    border-radius: 16px;
+    border-radius: 15px;
     background-color: #F14E32;
     color: #EFEFE7;
     cursor: pointer;
