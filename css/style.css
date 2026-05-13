@@ -72,7 +72,7 @@ nav{
     height: 45px;
     width: 170px;
     border: none;
-    border-radius: 15px;
+    border-radius: 40px;
     background-color: #ec3313;
     color: #EFEFE7;
     cursor: pointer;
@@ -85,7 +85,7 @@ nav{
 }
 
 .nav-btn-install:hover{
-    border-radius: 10px;
+    border-radius: 18px;
 }
 
 
