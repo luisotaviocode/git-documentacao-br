@@ -1,8 +1,8 @@
 /* Paleta de Cores */
 :root{
-    --primary-color: #F14E32;
+    --primary-color: #ec3313;
     --secondary-color: #FFFFFF;
-    --tertiary-color: #000000;
+    --tertiary-color: #413932;
 }
 
 /* Reset */
@@ -10,6 +10,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
 }
 
 /* Menu */
@@ -50,7 +54,7 @@ nav{
     bottom: 0;
     width: 0;
     height: 2px;
-    background-color: #F14E32;
+    background-color: #ec3313;
     transition: width 0.2s ease-out;
 }
 
@@ -63,13 +67,13 @@ nav{
 }
 
 /* Botão para a página da instalação */
-.btn-install{
+.nav-btn-install{
     margin: 0 10px 0 0;
-    height: 35px;
-    width: 165px;
+    height: 45px;
+    width: 170px;
     border: none;
     border-radius: 15px;
-    background-color: #F14E32;
+    background-color: #ec3313;
     color: #EFEFE7;
     cursor: pointer;
 
@@ -80,17 +84,10 @@ nav{
     font-size: 1.05rem;
 }
 
-.btn-install:hover{
+.nav-btn-install:hover{
     border-radius: 10px;
 }
 
-/* Botão que muda a cor do tema (dark/light) */
-.btn-change-theme{
-    height: 30px;
-    width: 30px;
-    border-radius: 100%;
-    color: #000000;
-}
 
 /* == Hero/Header == */
 header{
@@ -105,7 +102,7 @@ header{
 #header-git-icon{
     height: 35vh;
     width: auto;
-    margin: 10px 0 10px 0;
+    margin: 5vh 0 1vh 0;
 }
 
 .textbox-header{
@@ -114,23 +111,70 @@ header{
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-    margin: 10px 0 30px 0;
+    margin-bottom:30px;
 }
 
 .textbox-header h1{
-    font-family: 'Satoshi-Black';
-    font-size: 5rem;
-}
-
-.textbox-header h1::after{
-    content: ':';
-    position: absolute;
-    font-size: 5rem;
-    margin-left: 10px;
+    font-family: 'Satoshi-Medium';
+    font-size: 6.75rem;
+    color: #ec3313;
 }
 
 .textbox-header h2{
-    font-family: 'Satoshi-Bold';
+    font-family: 'Satoshi-Black';
     font-size: 2rem;
-    margin: 0 0 0 40px;
+    margin: 0 0 0 2vh;
+}
+
+.textbox-header h2 span{
+    font-family: 'Satoshi-BoldItalic';
+    background-color: #ec3313;
+    padding: 3px 6px 3px 6px;
+    color: #FFFFFF;
+}
+
+.header-btn-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+    gap: 15vh;
+}
+
+#header-download-btn{
+    font-family: 'Satoshi-Medium';
+    font-size: 1.25rem;
+
+    height: 50px;
+    width: 185px;
+    border: none;
+    border-radius: 30px;
+    background-color: #ec3313;
+    color: #EFEFE7;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#header-learn-btn{
+    font-family: 'Satoshi-Medium';
+    font-size: 1.25rem;
+
+    height: 50px;
+    width: 200px;
+    border: none;
+    border-radius: 30px;
+    background-color: #413932;
+    color: #EFEFE7;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
