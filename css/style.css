@@ -185,7 +185,13 @@ header{
 }
 
 /* Seção "What is Git" */
-#what-is-git{
+#o-que-e-git{
+    background-color: #EFEFE7;
+    margin-top: 12vh;
+    padding: 0.5vh ;
+}
+
+#main-content{
     margin: 27vh 30vh 25vh 30vh;
 
     display: flex;
@@ -195,19 +201,24 @@ header{
     gap: 4px;
 }
 
-#what-is-git h2{
-    font-family: 'Satoshi-Bold';
+#main-content h2{
+    font-family: 'Satoshi-Medium';
     font-size: 5rem;
-    margin: 5vh 0 15vh 0;
+    margin: 5vh 0 13vh 0;
 }
 
-#what-is-git p{
+.title-destaque{
+    color: #ec3313;
+    font-family: 'Satoshi-Black';
+}
+
+#main-content p{
     font-family: 'Satoshi-Regular';
-    font-size: 1.25rem;
+    font-size: 1.4rem;
     text-align: justify;
 }
 
 .p-destaque{
-    font-family: 'Satoshi-Medium';
+    font-family: 'Satoshi-Black';
     color: #ec3313;
 }
